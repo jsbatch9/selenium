@@ -20,6 +20,7 @@ public class TakeScreenShot {
 		takeScreenShot();
 		
 		
+		
 	}
 	
 	public static void takeScreenShot() {
