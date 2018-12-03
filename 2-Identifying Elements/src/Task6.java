@@ -15,10 +15,6 @@ public class Task6 {
 		driver.findElement(By.cssSelector(".f14.margTop10.form-label + div>input")).sendKeys("abc123");
 		driver.findElement(By.cssSelector("[name='proceed']")).click();
 		
-		
-		
-		
-
 	}
 
 }
