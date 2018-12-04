@@ -51,6 +51,8 @@ public class Task13 {
 		data[1][0]="abc";
 		data[1][1]="abc";
 		
+		
+		
 		return data;
 	}
 
