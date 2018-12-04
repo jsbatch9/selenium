@@ -1,18 +1,14 @@
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+package testcases;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class AppBeforeAfterMethod {
+public class AppBeforeAfterTest {
 	
 	
-	@BeforeMethod
-	public void beforeMethod() {
-		System.out.println("---Before Method---");
-	}
-	
-	@AfterMethod
-	public void afterMethod() {
-		System.out.println("---After Method---");
+	@BeforeTest
+	public void beforeTest() {
+		System.out.println("Before Executing Test Case");
 	}
 	
 	@Test(priority=1)
@@ -30,5 +26,7 @@ public class AppBeforeAfterMethod {
 	public void LogoutTest() {
 		System.out.println("Logout");
 	}
+	
+	
 
 }

@@ -1,14 +1,7 @@
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+package testcases;
 import org.testng.annotations.Test;
 
-public class AppBeforeAfterTest {
-	
-	
-	@BeforeTest
-	public void beforeTest() {
-		System.out.println("Before Executing Test Case");
-	}
+public class AppPriority {
 	
 	@Test(priority=1)
 	public void LoginTest() {
@@ -25,7 +18,5 @@ public class AppBeforeAfterTest {
 	public void LogoutTest() {
 		System.out.println("Logout");
 	}
-	
-	
 
 }

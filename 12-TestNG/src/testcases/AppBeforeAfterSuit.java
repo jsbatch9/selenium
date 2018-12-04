@@ -1,9 +1,10 @@
-import org.testng.SkipException;
+package testcases;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-public class AppSkipTest {
+public class AppBeforeAfterSuit {
+	
 	
 	@BeforeSuite
 	public void beforeSuit() {
@@ -15,7 +16,7 @@ public class AppSkipTest {
 		System.out.println("---After Suit---");
 	}
 	
-	@Test(priority=1,enabled=false)
+	@Test(priority=1)
 	public void LoginTest() {
 		//selenium code
 		System.out.println("Login");
@@ -24,7 +25,6 @@ public class AppSkipTest {
 	@Test(priority=2)
 	public void PasswordChange() {
 		System.out.println("Changing Paasword");
-		throw new SkipException("reason");
 	}
 	
 	@Test(priority=3)

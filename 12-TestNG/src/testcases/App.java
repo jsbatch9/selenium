@@ -1,19 +1,20 @@
+package testcases;
 import org.testng.annotations.Test;
 
-public class AppPriority {
+public class App {
 	
-	@Test(priority=1)
+	@Test
 	public void LoginTest() {
 		//selenium code
 		System.out.println("Login");
 	}
 	
-	@Test(priority=2)
+	@Test
 	public void PasswordChange() {
 		System.out.println("Changing Paasword");
 	}
 	
-	@Test(priority=3)
+	@Test
 	public void LogoutTest() {
 		System.out.println("Logout");
 	}
