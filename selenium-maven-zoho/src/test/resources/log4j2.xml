@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+
+    <RollingFile name="File" fileName="/Users/JavaScript/Selenium/testing-maven/selenium-maven-zoho/src/test/resources/prints.log" filePattern="${basePath}/prints-%d{yyyy-MM-dd}.log">
+        <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        <SizeBasedTriggeringPolicy size="50000000" />
+    </RollingFile>
+    
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+  </Appenders>
+
+  <Loggers>
+ 
+    <Logger name="com.zoho.zohoTest" level="trace" additivity="false">
+     <AppenderRef ref="File"/>
+    </Logger>
+
+    <Root level="error">
+      <AppenderRef ref="Console"/>
+    </Root>
+  </Loggers>
+</Configuration>
